@@ -23,5 +23,5 @@ resource "random_id" "bucket_suffix" {
   byte_length = 4
 }
 
-variable "project_id" {}
-variable "region" {}
+#variable "project_id" {}
+#variable "region" {}
