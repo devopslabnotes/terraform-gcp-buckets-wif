@@ -17,6 +17,7 @@ provider "google" {
 resource "google_storage_bucket" "example" {
   name     = "my-wif-secured-bucket-${random_id.bucket_suffix.hex}"
   location = var.region
+  uniform_bucket_level_access = true
 }
 
 resource "random_id" "bucket_suffix" {
