@@ -4,7 +4,7 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "5.27.0"
+      version = "6.50.0"
     }
   }
 }
@@ -22,6 +22,3 @@ resource "google_storage_bucket" "example" {
 resource "random_id" "bucket_suffix" {
   byte_length = 4
 }
-
-#variable "project_id" {}
-#variable "region" {}
