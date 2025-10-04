@@ -22,3 +22,13 @@ resource "google_storage_bucket" "example" {
 resource "random_id" "bucket_suffix" {
   byte_length = 4
 }
+
+variable "project_id" {
+  description = "The GCP project ID where resources will be created"
+  type        = string
+}
+
+variable "region" {
+  description = "The GCP region to deploy resources into"
+  type        = string
+}
